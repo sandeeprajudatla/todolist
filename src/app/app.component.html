@@ -1,0 +1,8 @@
+<div class="main">
+    <h1>TODO LIST</h1>
+    <input type="text" placeholder="enter the new value"[(ngModel)]="todolist">
+     <button (click)="addlist ()">add</button>
+     <p *ngFor="let c of listarray; let i = index">{{c}} <button (click)="removefromlist(i)">delete</button></p>
+       
+
+</div>
